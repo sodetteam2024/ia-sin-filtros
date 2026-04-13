@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IA Sin Filtros — Aprende IA sin ser experto</title>
+  <meta name="description" content="Aprende a usar la Inteligencia Artificial de forma práctica, simple y gratuita. Prompts, herramientas y guías para no técnicos." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo"><i data-lucide="brain"></i> IA Sin Filtros</a>
+      <nav class="navbar__links">
+        <a href="index.html">Inicio</a>
+        <a href="blog.html">Blog</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+      </nav>
+      <button class="navbar__toggle" id="menuToggle" aria-label="Abrir menú"><i data-lucide="menu"></i></button>
+    </div>
+    <!-- Menú móvil -->
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="index.html">Inicio</a>
+      <a href="blog.html">Blog</a>
+      <a href="recursos.html">Recursos</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       ROUTER: renderiza la página activa
+  ═══════════════════════════════════════════ -->
+  <main id="app"></main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand"><i data-lucide="brain"></i> IA Sin Filtros</span>
+      <p class="footer__copy">Aprende IA sin ser experto. Contenido gratuito cada semana.</p>
+      <a href="https://go.hotmart.com/P105354425M?dp=1" target="_blank" class="footer__cta">Ver Guía Completa <i data-lucide="arrow-right"></i></a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    // Reinicializar Lucide cada vez que el router actualiza el DOM
+    window.refreshIcons = () => lucide.createIcons();
+  </script>
+</body>
+</html>
